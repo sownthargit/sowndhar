@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('confusionApp', ['ui.router'])
+angular.module('confusionApp', ['ui.router','ngResource'])
 .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
         
@@ -24,7 +24,7 @@ angular.module('confusionApp', ['ui.router'])
         
             // route for the aboutus page
             .state('app.aboutus', {
-                url:'aboutus',
+                //url:'aboutus',
                 views: {
                     'content@': {
                         templateUrl : 'views/aboutus.html',
@@ -35,7 +35,7 @@ angular.module('confusionApp', ['ui.router'])
         
             // route for the contactus page
             .state('app.contactus', {
-                url:'contactus',
+               // url:'contactus',
                 views: {
                     'content@': {
                         templateUrl : 'views/contactus.html',
@@ -46,7 +46,7 @@ angular.module('confusionApp', ['ui.router'])
 
             // route for the menu page
             .state('app.menu', {
-                url: 'menu',
+                //url: 'menu',
                 views: {
                     'content@': {
                         templateUrl : 'views/menu.html',
